@@ -84,7 +84,7 @@ class SharedpreferenceActivity : ComponentActivity() {
             }) {
                 Text(text = "0 초기화 버튼")
             }
-            Button(onClick = { // onClick을 눌렀을때 count>Int.Max_VALUE/2 면 Column에 Text("Overflow")를 띄우는 코드
+            Button(onClick = {
                 if (count > Int.MAX_VALUE / 2) {
                     overFlowed = true
                 } else {
